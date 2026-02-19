@@ -82,7 +82,6 @@ _Nested Loops: Outer loop (row) controls rows, inner loop (col) controls columns
 
 ![Flowchart diagram](drawio_assets/diagram_9852ba0070b95e5e.png)
 
-_Click the diagram to open in full editor_
 
 
 ## 🧪 Quick Check: Counting Iterations
@@ -233,10 +232,10 @@ END DrawRectangle
 
 ```
 
-**Example Answer:**
+<details>
+<summary><b>Example Answer</b></summary>
 
-
-```python
+```
 # Example solution
 BEGIN DrawRectangle
     FOR row = 1 TO 3 STEP 1
@@ -247,6 +246,8 @@ BEGIN DrawRectangle
     NEXT row
 END DrawRectangle
 ```
+
+</details>
 
 ## Pattern 2: Multiplication Table
 
@@ -319,10 +320,10 @@ END CoordinateGrid
 
 ```
 
-**Example Answer:**
+<details>
+<summary><b>Example Answer</b></summary>
 
-
-```python
+```
 # Example solution
 BEGIN CoordinateGrid
     FOR row = 0 TO 2 STEP 1
@@ -333,6 +334,8 @@ BEGIN CoordinateGrid
     NEXT row
 END CoordinateGrid
 ```
+
+</details>
 
 ## Pattern 3: Triangle Patterns (Dependent Loops)
 
@@ -371,7 +374,6 @@ _Triangle Pattern: Inner loop limit depends on outer loop variable (col <= row).
 
 ![Flowchart diagram](drawio_assets/diagram_e2348a4c70d11c89.png)
 
-_Click the diagram to open in full editor_
 
 
 ## 🧪 Understanding Dependent Loops
@@ -441,10 +443,10 @@ END NumberTriangle
 
 ```
 
-**Example Answer:**
+<details>
+<summary><b>Example Answer</b></summary>
 
-
-```python
+```
 # Example solution
 BEGIN NumberTriangle
     FOR row = 1 TO 5 STEP 1
@@ -455,6 +457,8 @@ BEGIN NumberTriangle
     NEXT row
 END NumberTriangle
 ```
+
+</details>
 
 ## 🧪 Tracing Nested Loops
 
@@ -521,10 +525,10 @@ for row in range(1, 5):
     pass
 ```
 
-**Example Solution:**
+<details>
+<summary><b>Example Solution</b></summary>
 
-
-```python
+```
 # Example solution
 # Create a 4x4 multiplication table
 for row in range(1, 5):
@@ -532,6 +536,8 @@ for row in range(1, 5):
         print(f"{row * col:3}", end="")
     print()
 ```
+
+</details>
 
 ## Pseudocode to Python Translation
 
@@ -574,10 +580,12 @@ Think about a simple grid-based game (like Tic-Tac-Toe, Chess, Minesweeper, or B
 
 Explain in your own words.
 
-**Example Answer:**
+<details>
+<summary><b>Example Answer</b></summary>
 
 In Tic-Tac-Toe, nested loops would be used to draw the 3x3 grid. The outer loop goes through each row (0, 1, 2) and the inner loop goes through each column. For each cell, it prints X, O, or empty. To check for a win, you'd use nested loops to check all rows, all columns, and the diagonals to see if any have three matching symbols.
 
+</details>
 
 ## ✅ Lesson Complete!
 

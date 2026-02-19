@@ -79,6 +79,9 @@ def convert_notebook(
     # Replace draw.io iframes with PNG images
     body = replace_iframes_with_png(body, output_dir, verbose)
 
+    # Remove "_Click the diagram to open in full editor_" lines
+    body = re.sub(r"_Click the diagram to open in full editor_\n?", "", body)
+
     output_dir.mkdir(parents=True, exist_ok=True)
     md_path = output_dir / f"{notebook_path.stem}.md"
     md_path.write_text(body, encoding="utf-8")

@@ -94,7 +94,6 @@ _FOR Loop (Counted Loop): Initialize counter → Check condition → Execute bod
 
 ![Flowchart diagram](drawio_assets/diagram_e6fe3daa5d566dc6.png)
 
-_Click the diagram to open in full editor_
 
 
 ## FOR Loop Pseudocode (HSC Standard)
@@ -215,10 +214,10 @@ END PrintNumbers
 
 ```
 
-**Example Answer:**
+<details>
+<summary><b>Example Answer</b></summary>
 
-
-```python
+```
 # Example solution
 BEGIN PrintNumbers
     FOR i = 1 TO 5 STEP 1
@@ -226,6 +225,8 @@ BEGIN PrintNumbers
     NEXT i
 END PrintNumbers
 ```
+
+</details>
 
 ## Pattern 1: The Counter Pattern
 
@@ -265,7 +266,6 @@ _Counter Pattern: Initialize counter to 0, loop through items, check condition, 
 
 ![Flowchart diagram](drawio_assets/diagram_d819b0e4cc309536.png)
 
-_Click the diagram to open in full editor_
 
 
 ## ✍️ Practice: Counter Pattern
@@ -312,10 +312,10 @@ END CountDivisibleBy3
 
 ```
 
-**Example Answer:**
+<details>
+<summary><b>Example Answer</b></summary>
 
-
-```python
+```
 # Example solution
 BEGIN CountDivisibleBy3
     SET count TO 0
@@ -329,6 +329,8 @@ BEGIN CountDivisibleBy3
     OUTPUT "Numbers divisible by 3: " + count
 END CountDivisibleBy3
 ```
+
+</details>
 
 ## Pattern 2: The Accumulator Pattern
 
@@ -368,7 +370,6 @@ _Accumulator Pattern: Initialize total to 0, loop from 1 to 5, add each value to
 
 ![Flowchart diagram](drawio_assets/diagram_c4182c725f746c3f.png)
 
-_Click the diagram to open in full editor_
 
 
 ## ✍️ Practice: Accumulator Pattern - Sum
@@ -422,10 +423,10 @@ END SumToN
 
 ```
 
-**Example Answer:**
+<details>
+<summary><b>Example Answer</b></summary>
 
-
-```python
+```
 # Example solution
 BEGIN SumToN
     OUTPUT "Enter a number:"
@@ -440,6 +441,8 @@ BEGIN SumToN
     OUTPUT "Sum: " + total
 END SumToN
 ```
+
+</details>
 
 ## ✍️ Practice: Factorial in Pseudocode
 
@@ -488,10 +491,10 @@ END Factorial
 
 ```
 
-**Example Answer:**
+<details>
+<summary><b>Example Answer</b></summary>
 
-
-```python
+```
 # Example solution
 BEGIN Factorial
     OUTPUT "Enter a number:"
@@ -506,6 +509,8 @@ BEGIN Factorial
     OUTPUT "Factorial: " + result
 END Factorial
 ```
+
+</details>
 
 ## 🧪 Understanding Accumulators
 
@@ -628,12 +633,14 @@ Think of a real-world example for each pattern:
 
 Give a specific example for each.
 
-**Example Answer:**
+<details>
+<summary><b>Example Answer</b></summary>
 
 Counter pattern example: Counting how many students are present in class. I would start at 0, and add 1 for each student I see in their seat. At the end, I know the attendance count.
 
 Accumulator pattern example: Calculating my total spending for the week. I start at $0, then add each purchase amount: $15 for lunch, $30 for groceries, $8 for coffee. The total tells me how much I spent.
 
+</details>
 
 ## Counting Backwards (Negative Step)
 
@@ -702,10 +709,10 @@ END Countdown
 
 ```
 
-**Example Answer:**
+<details>
+<summary><b>Example Answer</b></summary>
 
-
-```python
+```
 # Example solution
 BEGIN Countdown
     FOR i = 10 TO 1 STEP -1
@@ -715,6 +722,8 @@ BEGIN Countdown
     OUTPUT "Blast off!"
 END Countdown
 ```
+
+</details>
 
 ## 🧪 Loop Bounds Design
 
@@ -788,10 +797,10 @@ total = 0
 print("Sum:", total)
 ```
 
-**Example Solution:**
+<details>
+<summary><b>Example Solution</b></summary>
 
-
-```python
+```
 # Example solution
 # Print numbers 1 to 5 and calculate sum
 total = 0
@@ -802,6 +811,8 @@ for i in range(1, 6):
 
 print("Sum:", total)
 ```
+
+</details>
 
 ## ✅ Lesson Complete!
 

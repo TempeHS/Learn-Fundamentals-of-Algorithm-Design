@@ -2,7 +2,7 @@
 # Simple wrapper script to convert all markdown lessons to PDF
 
 echo "=================================================="
-echo "Converting SQL Lessons from Markdown to PDF"
+echo "Converting Algorithm Design Lessons to PDF"
 echo "=================================================="
 echo ""
 

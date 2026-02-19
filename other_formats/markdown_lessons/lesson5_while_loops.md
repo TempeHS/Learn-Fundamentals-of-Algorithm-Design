@@ -83,7 +83,6 @@ _WHILE loop (pre-test): Initialize counter, test condition BEFORE body executes,
 
 ![Flowchart diagram](drawio_assets/diagram_ad3642393151f700.png)
 
-_Click the diagram to open in full editor_
 
 
 ## 🧪 Quick Check: Loop Choice
@@ -161,7 +160,6 @@ _Input Validation: Get initial input, validate, True (invalid) flows DOWN to err
 
 ![Flowchart diagram](drawio_assets/diagram_0dcf84a705308f25.png)
 
-_Click the diagram to open in full editor_
 
 
 ## Input Validation Pattern
@@ -249,10 +247,10 @@ END PasswordChecker
 
 ```
 
-**Example Answer:**
+<details>
+<summary><b>Example Answer</b></summary>
 
-
-```python
+```
 # Example solution
 BEGIN PasswordChecker
     OUTPUT "Enter password: "
@@ -266,6 +264,8 @@ BEGIN PasswordChecker
     OUTPUT "Access granted"
 END PasswordChecker
 ```
+
+</details>
 
 ## ⚠️ Danger: Infinite Loops!
 
@@ -372,10 +372,10 @@ END GuessingGame
 
 ```
 
-**Example Answer:**
+<details>
+<summary><b>Example Answer</b></summary>
 
-
-```python
+```
 # Example solution
 BEGIN GuessingGame
     SET secret TO 7
@@ -397,6 +397,8 @@ BEGIN GuessingGame
     OUTPUT "Correct! You took " + attempts + " guesses."
 END GuessingGame
 ```
+
+</details>
 
 ## 🧪 Loop Termination
 
@@ -477,10 +479,10 @@ while choice != 3:
 print("Program ended.")
 ```
 
-**Example Solution:**
+<details>
+<summary><b>Example Solution</b></summary>
 
-
-```python
+```
 # Example solution
 choice = 0
 
@@ -504,6 +506,8 @@ while choice != 3:
 print("Program ended.")
 ```
 
+</details>
+
 ## Pseudocode to Python Translation
 
 | HSC Pseudocode | Python |
@@ -522,10 +526,12 @@ Python uses **indentation** to show what's inside the loop, while pseudocode use
 
 Think about websites or apps you use. Describe ONE example of input validation you've encountered. What was the input field? What made input 'invalid'? How did the system respond to invalid input?
 
-**Example Answer:**
+<details>
+<summary><b>Example Answer</b></summary>
 
 When creating a password on most websites, there's input validation. The input field is the password box. Invalid input might be a password that's too short (less than 8 characters), doesn't contain a number, or doesn't have a special character. The system responds by showing a red error message explaining what's wrong, and won't let you proceed until you fix it. This is like a WHILE loop that keeps you on the page until password is valid.
 
+</details>
 
 ## ✅ Lesson Complete!
 

@@ -66,7 +66,6 @@ _Fibonacci recursive algorithm - the subprogram calls itself twice with smaller 
 
 ![Flowchart diagram](drawio_assets/diagram_e9f4ce05d5005751.png)
 
-_Click the diagram to open in full editor_
 
 
 ### Fibonacci in Pseudocode
@@ -115,9 +114,13 @@ Not a base case → returns `Fibonacci(4) + Fibonacci(3)`
 
 `Fibonacci(4)` → `Fibonacci(3) + Fibonacci(2)`
 
+---
+
 **Computing Fibonacci(3) (left branch of Fib(4)):**
 
 `Fibonacci(3)` → `Fibonacci(2) + Fibonacci(1)`
+
+---
 
 **Computing Fibonacci(2) (left branch of Fib(3)):**
 
@@ -127,15 +130,21 @@ Not a base case → returns `Fibonacci(4) + Fibonacci(3)`
 - `Fibonacci(0)` → **0** (base case)
 - So `Fibonacci(2) = 1 + 0 = 1`
 
+---
+
 **Back to Fibonacci(3):**
 
 - `Fibonacci(2) = 1` (just calculated)
 - `Fibonacci(1) = 1` (base case)
 - So `Fibonacci(3) = 1 + 1 = 2`
 
+---
+
 **Computing Fibonacci(2) (right branch of Fib(4)):**
 
 - `Fibonacci(2) = 1` (same as before: 1 + 0)
+
+---
 
 **Back to Fibonacci(4):**
 
@@ -201,10 +210,10 @@ END SumToN
 
 ```
 
-**Example Answer:**
+<details>
+<summary><b>Example Answer</b></summary>
 
-
-```python
+```
 # Example solution
 BEGIN SumToN(n)
     IF n = 1 THEN
@@ -213,6 +222,8 @@ BEGIN SumToN(n)
     RETURN n + SumToN(n - 1)
 END SumToN
 ```
+
+</details>
 
 ## Pattern 2: Divide and Conquer
 
@@ -239,7 +250,6 @@ _Binary search divides the search space in half with each comparison_
 
 ![Flowchart diagram](drawio_assets/diagram_b293de3c6d9e9095.png)
 
-_Click the diagram to open in full editor_
 
 
 ### Binary Search in Pseudocode
@@ -380,10 +390,10 @@ END FindMax
 
 ```
 
-**Example Answer:**
+<details>
+<summary><b>Example Answer</b></summary>
 
-
-```python
+```
 # Example solution
 BEGIN FindMax(list, low, high)
     IF low = high THEN
@@ -401,6 +411,8 @@ BEGIN FindMax(list, low, high)
     ENDIF
 END FindMax
 ```
+
+</details>
 
 ## Pattern 3: Permutations
 
@@ -426,7 +438,6 @@ _Each branch shows the choice made at each level - 3 items produce 3! = 6 permut
 
 ![Flowchart diagram](drawio_assets/diagram_615b253073b66027.png)
 
-_Click the diagram to open in full editor_
 
 
 ### Permutations in Pseudocode
@@ -562,10 +573,10 @@ END CountPermutations
 
 ```
 
-**Example Answer:**
+<details>
+<summary><b>Example Answer</b></summary>
 
-
-```python
+```
 # Example solution
 BEGIN CountPermutations(n)
     IF n ≤ 1 THEN
@@ -574,6 +585,8 @@ BEGIN CountPermutations(n)
     RETURN n × CountPermutations(n - 1)
 END CountPermutations
 ```
+
+</details>
 
 ## Pattern 4: Backtracking
 
@@ -600,7 +613,6 @@ _Backtracking: Try choices, validate, recurse if valid, backtrack (undo) when st
 
 ![Flowchart diagram](drawio_assets/diagram_d7bf02bc224c1d09.png)
 
-_Click the diagram to open in full editor_
 
 
 ### Backtracking in Pseudocode
@@ -672,10 +684,10 @@ END FindSubsetSum
 
 ```
 
-**Example Answer:**
+<details>
+<summary><b>Example Answer</b></summary>
 
-
-```python
+```
 # Example solution
 BEGIN FindSubsetSum(numbers, target, index)
     IF target = 0 THEN
@@ -695,6 +707,8 @@ BEGIN FindSubsetSum(numbers, target, index)
     RETURN FindSubsetSum(numbers, target, index + 1)
 END FindSubsetSum
 ```
+
+</details>
 
 ## Summary: When to Use Each Pattern
 

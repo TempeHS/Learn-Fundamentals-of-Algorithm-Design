@@ -183,7 +183,6 @@ _A simple sequential algorithm for making tea — using NESA HSC standard symbol
 
 ![Flowchart diagram](drawio_assets/diagram_a64a9b4b803b1230.png)
 
-_Click the diagram to open in full editor_
 
 
 ## 📺 Watch: Pseudocode Explained
@@ -318,10 +317,10 @@ END BrushTeeth
 
 ```
 
-**Example Answer:**
+<details>
+<summary><b>Example Answer</b></summary>
 
-
-```python
+```
 # Example solution
 BEGIN BrushTeeth
     GET toothbrush and toothpaste
@@ -334,14 +333,18 @@ BEGIN BrushTeeth
 END BrushTeeth
 ```
 
+</details>
+
 ## 📝 Reflection: Real-World Algorithms
 
 Think of an everyday activity you do regularly (e.g., making breakfast, getting ready for school, playing a game). Describe it as a simple algorithm in 3-4 sentences. What is the starting point? What are the main steps? What marks the end?
 
-**Example Answer:**
+<details>
+<summary><b>Example Answer</b></summary>
 
 Making my morning coffee is an algorithm. It starts when I wake up and decide I want coffee. The steps are: fill the kettle, boil water, add coffee to mug, pour water, add milk. It ends when I take my first sip.
 
+</details>
 
 ## 🧪 Flowchart Symbol Check
 
@@ -457,10 +460,12 @@ Before writing any solution, analyze the problem:
 3. What steps would you need (use decomposition)?
 4. Are there any edge cases to consider?
 
-**Example Answer:**
+<details>
+<summary><b>Example Answer</b></summary>
 
 Inputs: A list of people with their ages (or birth dates). Output: The name of the oldest person (or their details). Steps: (1) Get the list of people and ages, (2) Compare ages to find the maximum, (3) Return the person with the maximum age. Edge cases: What if two people have the same age? What if the list is empty? What if there's only one person? The algorithm should handle these scenarios.
 
+</details>
 
 ## Summary: The Algorithm Design Process
 

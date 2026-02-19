@@ -80,7 +80,6 @@ _Binary Selection (IF-THEN-ELSE): Decision diamond has exactly two exits labeled
 
 ![Flowchart diagram](drawio_assets/diagram_7400814621a3b336.png)
 
-_Click the diagram to open in full editor_
 
 
 ## Writing Selection in Pseudocode (HSC Standard)
@@ -207,7 +206,6 @@ _Multiway Selection (IF-ELSEIF-ELSE): Chain of decisions where only ONE path exe
 
 ![Flowchart diagram](drawio_assets/diagram_1a5dbad6658bacb2.png)
 
-_Click the diagram to open in full editor_
 
 
 ## ✍️ Practice: Grade Calculator
@@ -259,10 +257,10 @@ END GradeCalculator
 
 ```
 
-**Example Answer:**
+<details>
+<summary><b>Example Answer</b></summary>
 
-
-```python
+```
 # Example solution
 BEGIN GradeCalculator
     OUTPUT "Enter score:"
@@ -283,6 +281,8 @@ BEGIN GradeCalculator
     OUTPUT grade
 END GradeCalculator
 ```
+
+</details>
 
 ## ✍️ Practice: Temperature Checker
 
@@ -320,10 +320,10 @@ END TemperatureChecker
 
 ```
 
-**Example Answer:**
+<details>
+<summary><b>Example Answer</b></summary>
 
-
-```python
+```
 # Example solution
 BEGIN TemperatureChecker
     OUTPUT "Enter temperature:"
@@ -340,6 +340,8 @@ BEGIN TemperatureChecker
     ENDIF
 END TemperatureChecker
 ```
+
+</details>
 
 ## CASEWHERE Selection
 
@@ -370,7 +372,6 @@ _CASEWHERE Flowchart: Multiple branches from one decision, each labeled with its
 
 ![Flowchart diagram](drawio_assets/diagram_de73ee8036281e36.png)
 
-_Click the diagram to open in full editor_
 
 
 ## 🧪 Selecting the Right Structure
@@ -436,10 +437,12 @@ ENDIF
 
 Describe a real-life situation where you make a decision based on a condition. Write it as an IF-THEN-ELSE statement in plain English. Then identify: Is it binary selection, multi-way selection, or nested selection?
 
-**Example Answer:**
+<details>
+<summary><b>Example Answer</b></summary>
 
 When I'm deciding what to wear: IF the temperature is below 15 degrees THEN I wear a jacket and long pants ELSEIF it's below 25 degrees THEN I wear a light sweater ELSE I wear a t-shirt and shorts. This is a multi-way selection (IF-ELSEIF-ELSE) because there are more than two possible outcomes based on ranges of temperature.
 
+</details>
 
 ## 🧪 Condition Order Matters
 
@@ -513,10 +516,10 @@ This demonstrates binary selection (IF-THEN-ELSE) in Python.
 
 ```
 
-**Example Solution:**
+<details>
+<summary><b>Example Solution</b></summary>
 
-
-```python
+```
 # Example solution
 # Get the user's age
 age = int(input("Enter your age: "))
@@ -527,6 +530,8 @@ if age >= 18:
 else:
     print("You are a minor")
 ```
+
+</details>
 
 ## ✅ Lesson Complete!
 

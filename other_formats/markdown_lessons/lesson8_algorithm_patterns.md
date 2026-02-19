@@ -69,7 +69,6 @@ _Counter Pattern: Initialize count to 0, increment when condition is true. Blue 
 
 ![Flowchart diagram](drawio_assets/diagram_cf9f2730fe93a85d.png)
 
-_Click the diagram to open in full editor_
 
 
 ## Pattern 2: Accumulator
@@ -112,7 +111,6 @@ _Accumulator Pattern: Initialize total to 0, add each item to the running total.
 
 ![Flowchart diagram](drawio_assets/diagram_668a07821b43afd9.png)
 
-_Click the diagram to open in full editor_
 
 
 ## 🧪 Quick Check: Counter vs Accumulator
@@ -181,7 +179,6 @@ _Flag Pattern: Start FALSE, set TRUE when condition met. Orange boxes highlight 
 
 ![Flowchart diagram](drawio_assets/diagram_55d30c3bb000319d.png)
 
-_Click the diagram to open in full editor_
 
 
 ## Pattern 4: Best-So-Far
@@ -409,10 +406,10 @@ END AveragePassingScore
 
 ```
 
-**Example Answer:**
+<details>
+<summary><b>Example Answer</b></summary>
 
-
-```python
+```
 # Example solution
 BEGIN AveragePassingScore
     SET scores TO [85, 42, 91, 55, 38, 78, 92, 45]
@@ -435,6 +432,8 @@ BEGIN AveragePassingScore
     OUTPUT "Average passing score: " + average
 END AveragePassingScore
 ```
+
+</details>
 
 ## ✍️ Practice: Find Longest Word
 
@@ -477,10 +476,10 @@ END FindLongestWord
 
 ```
 
-**Example Answer:**
+<details>
+<summary><b>Example Answer</b></summary>
 
-
-```python
+```
 # Example solution
 BEGIN FindLongestWord
     SET words TO ["cat", "elephant", "dog", "hippopotamus", "ant"]
@@ -495,6 +494,8 @@ BEGIN FindLongestWord
     OUTPUT "Longest word: " + longest
 END FindLongestWord
 ```
+
+</details>
 
 ## Pattern Summary Table
 
@@ -559,10 +560,10 @@ else:
     print("No passing scores")
 ```
 
-**Example Solution:**
+<details>
+<summary><b>Example Solution</b></summary>
 
-
-```python
+```
 # Example solution
 scores = [85, 42, 91, 55, 38, 78, 92, 45]
 
@@ -583,6 +584,8 @@ else:
     print("No passing scores")
 ```
 
+</details>
+
 ## Pseudocode to Python Translation
 
 | Pattern | HSC Pseudocode | Python |
@@ -601,7 +604,8 @@ Think of an app you use regularly (social media, music, games, shopping). Identi
 2. What data is being processed?
 3. What's the purpose?
 
-**Example Answer:**
+<details>
+<summary><b>Example Answer</b></summary>
 
 Spotify likely uses:
 
@@ -609,6 +613,7 @@ Spotify likely uses:
 
 2. **Counter Pattern**: Spotify counts how many times I've listened to each song to create my 'Top Songs' playlist. Every time a song plays, it increments a counter for that song.
 
+</details>
 
 ## ✅ Lesson Complete!
 

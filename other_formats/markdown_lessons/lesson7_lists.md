@@ -88,7 +88,6 @@ _List Traversal Pattern: Use an index counter to visit every element from 0 to L
 
 ![Flowchart diagram](drawio_assets/diagram_818b53616f27b9f8.png)
 
-_Click the diagram to open in full editor_
 
 
 ## 🧪 Quick Check: Indexing
@@ -153,7 +152,6 @@ _Find Maximum Algorithm: Start with first element as 'best so far', then compare
 
 ![Flowchart diagram](drawio_assets/diagram_0bdafd5e3a070cbe.png)
 
-_Click the diagram to open in full editor_
 
 
 ## ✍️ Practice: Sum of List
@@ -200,10 +198,10 @@ END SumList
 
 ```
 
-**Example Answer:**
+<details>
+<summary><b>Example Answer</b></summary>
 
-
-```python
+```
 # Example solution
 BEGIN SumList
     SET numbers TO [10, 25, 30, 15, 20]
@@ -216,6 +214,8 @@ BEGIN SumList
     OUTPUT "Sum: " + total
 END SumList
 ```
+
+</details>
 
 ## ✍️ Practice: Find Minimum
 
@@ -258,10 +258,10 @@ END FindMinimum
 
 ```
 
-**Example Answer:**
+<details>
+<summary><b>Example Answer</b></summary>
 
-
-```python
+```
 # Example solution
 BEGIN FindMinimum
     SET numbers TO [34, 67, 23, 89, 12, 78]
@@ -276,6 +276,8 @@ BEGIN FindMinimum
     OUTPUT "Minimum: " + minimum
 END FindMinimum
 ```
+
+</details>
 
 ## Linear Search Algorithm
 
@@ -351,10 +353,10 @@ END CountEvens
 
 ```
 
-**Example Answer:**
+<details>
+<summary><b>Example Answer</b></summary>
 
-
-```python
+```
 # Example solution
 BEGIN CountEvens
     SET numbers TO [1, 4, 6, 7, 9, 10, 12, 15, 18]
@@ -369,6 +371,8 @@ BEGIN CountEvens
     OUTPUT "Even count: " + count
 END CountEvens
 ```
+
+</details>
 
 ## 🧪 Understanding LENGTH()
 
@@ -474,10 +478,10 @@ maximum = numbers[0]  # Start with first element
 print("Maximum:", maximum)
 ```
 
-**Example Solution:**
+<details>
+<summary><b>Example Solution</b></summary>
 
-
-```python
+```
 # Example solution
 numbers = [34, 67, 23, 89, 45, 12, 78]
 
@@ -491,6 +495,8 @@ for i in range(1, len(numbers)):
 # Print the result
 print("Maximum:", maximum)
 ```
+
+</details>
 
 ## Pseudocode to Python Translation
 
@@ -526,10 +532,12 @@ D) Works fine — just returns nothing
 
 Think about an app or system you use (social media, games, school systems). Identify ONE place where a list might be used behind the scenes. What data would be in the list? What operations might be performed on it?
 
-**Example Answer:**
+<details>
+<summary><b>Example Answer</b></summary>
 
 Instagram probably uses a list to store the posts on your feed. Each item in the list would be a post object with data like the image URL, caption, likes count, and username. Operations would include: adding new posts to the top of the list, removing posts you've hidden, and looping through the list to display each post on screen.
 
+</details>
 
 ## ✅ Lesson Complete!
 

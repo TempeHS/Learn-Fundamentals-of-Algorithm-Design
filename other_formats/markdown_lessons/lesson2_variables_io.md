@@ -166,7 +166,6 @@ _A sequential algorithm demonstrating INPUT (parallelogram), PROCESS (rectangle)
 
 ![Flowchart diagram](drawio_assets/diagram_d2a5f065f2d4631e.png)
 
-_Click the diagram to open in full editor_
 
 
 ## Flowchart Symbols for I/O
@@ -250,10 +249,10 @@ END SimpleCalculator
 
 ```
 
-**Example Answer:**
+<details>
+<summary><b>Example Answer</b></summary>
 
-
-```python
+```
 # Example solution
 BEGIN SimpleCalculator
     OUTPUT "Enter first number:"
@@ -270,6 +269,8 @@ BEGIN SimpleCalculator
     OUTPUT "Product: " + product
 END SimpleCalculator
 ```
+
+</details>
 
 ## 🧪 Algorithm Design: Data Flow
 
@@ -405,10 +406,12 @@ D) The print statement
 
 Think about a mobile app or game you use. What information might it store in variables? List at least 3 examples and explain what type of data each would hold (text/string, number, etc.).
 
-**Example Answer:**
+<details>
+<summary><b>Example Answer</b></summary>
 
 In a game like Minecraft, variables might store: 1) The player's health as a number (e.g., health = 20). 2) The player's username as text/string (e.g., username = "Steve"). 3) The player's inventory count as a number (e.g., diamonds = 5). 4) Whether the player is in creative mode as true/false (e.g., creative_mode = True).
 
+</details>
 
 ---
 
@@ -468,10 +471,10 @@ Use the `input()` function to get user input and `print()` to display output. Us
 
 ```
 
-**Example Solution:**
+<details>
+<summary><b>Example Solution</b></summary>
 
-
-```python
+```
 # Example solution
 # Ask for the user's favourite colour
 colour = input("What is your favourite colour? ")
@@ -482,6 +485,8 @@ message = "Your favourite colour is " + colour + "!"
 # Print the message
 print(message)
 ```
+
+</details>
 
 ## 🧪 Understanding Type Conversion
 

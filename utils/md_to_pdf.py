@@ -425,6 +425,34 @@ class MarkdownToPdfConverter:
         # Fix relative image paths to be absolute paths and download draw.io exports
         content = self.fix_image_paths(content, input_file)
 
+        # Expand <details> tags for PDF (answers should be visible, not collapsed)
+        # Pattern matches: <details>...<summary>Title</summary>...content...</details>
+        def expand_details(match):
+            full_match = match.group(0)
+            # Extract summary text (handle <b> tags inside summary)
+            summary_match = re.search(
+                r"<summary>(?:<b>)?([^<]+)(?:</b>)?</summary>",
+                full_match,
+                re.IGNORECASE,
+            )
+            summary_text = summary_match.group(1).strip() if summary_match else "Answer"
+            # Extract content after </summary> and before </details>
+            content_match = re.search(
+                r"</summary>\s*(.*?)\s*</details>",
+                full_match,
+                re.DOTALL | re.IGNORECASE,
+            )
+            inner_content = content_match.group(1).strip() if content_match else ""
+            # Return expanded format with summary as bold heading
+            return f"\n**{summary_text}**\n\n{inner_content}\n"
+
+        content = re.sub(
+            r"<details>.*?</details>",
+            expand_details,
+            content,
+            flags=re.DOTALL | re.IGNORECASE,
+        )
+
         # Replace GitHub-style alerts with custom classes
         content = re.sub(
             r"> \*\*Note:\*\*(.*?)(?=\n\n|\n$|\Z)",
